@@ -1,10 +1,10 @@
-import { NextRequest } from 'next/server';
 import {
   deleteApiUtil,
   getApiUtil,
   postApiUtil,
   putApiUtil,
-} from '@/lib/apiUtils';
+} from '@shopperz-web/src/lib/apiUtils';
+import { NextRequest } from 'next/server';
 
 export async function GET(request: NextRequest) {
   return getApiUtil(request, 'cart');

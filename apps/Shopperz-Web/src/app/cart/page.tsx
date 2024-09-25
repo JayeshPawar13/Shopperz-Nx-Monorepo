@@ -1,4 +1,4 @@
-import CartListItems from '@/components/cartItemList';
+import CartListItems from '@shopperz-web/src/components/cartItemList';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

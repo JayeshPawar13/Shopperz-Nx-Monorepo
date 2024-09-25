@@ -1,4 +1,4 @@
-import { title } from '@/components/primitives';
+import { title } from '@shopperz-web/src/components/primitives';
 import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: {

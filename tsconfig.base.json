@@ -13,8 +13,14 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@shopperz-web/*": ["apps/Shopperz-Web/*"],
+      "@shopperz/cart-actions": ["shared/cart-actions/src/index.ts"],
+      "@shopperz/cart-actions/server": ["shared/cart-actions/src/server.ts"],
+      "@shopperz/context": ["shared/context/src/index.ts"],
+      "@shopperz/context/server": ["shared/context/src/server.ts"],
+      "@shopperz/interfaces/*": ["shared/interfaces/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

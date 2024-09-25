@@ -1,6 +1,6 @@
-import { title } from '@/components/primitives';
-import ProductCard from '@/components/product-card';
-import { getProducts, getUsers } from '@/lib/utils';
+import { title } from '@shopperz-web/src/components/primitives';
+import ProductCard from '@shopperz-web/src/components/product-card';
+import { getProducts, getUsers } from '@shopperz-web/src/lib/utils';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

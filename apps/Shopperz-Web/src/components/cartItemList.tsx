@@ -6,9 +6,9 @@ import { Spinner } from '@nextui-org/spinner';
 import Image from 'next/image';
 import { Suspense, useEffect, useMemo, useState } from 'react';
 
-import { Product } from '@/app/products/products.interface';
-import { useAppContext } from '@/app/providers';
-import CartActions from '@/components/cartActions';
+import { useAppContext } from '@shopperz/context';
+import { CartActions } from '@shopperz/cart-actions';
+import { Product } from '@shopperz/interfaces/products.interface';
 
 export default function CartListItems() {
   const { cart, setCart } = useAppContext();

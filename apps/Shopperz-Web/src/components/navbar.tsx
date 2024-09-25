@@ -11,10 +11,10 @@ import clsx from 'clsx';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
-import { siteConfig } from '@/config/site';
-import { Logo } from '@/components/icons';
-import { useAppContext } from '@/app/providers';
+import { useAppContext } from '@shopperz/context';
 import { useEffect, useState } from 'react';
+import { Logo } from './icons';
+import { siteConfig } from '../config/site';
 
 export const Navbar = () => {
   const router = useRouter();

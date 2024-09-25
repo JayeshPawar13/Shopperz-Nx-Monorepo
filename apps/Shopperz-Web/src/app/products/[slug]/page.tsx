@@ -1,12 +1,10 @@
 import Image from 'next/image';
 import { Card } from '@nextui-org/card';
 import { Spinner } from '@nextui-org/spinner';
-
-import Rating from '@/components/rating';
-import CartActions from '@/components/cartActions';
-
-import { getProduct } from '@/lib/utils';
-import { Product } from '../products.interface';
+import { Product } from '@shopperz/interfaces/products.interface';
+import { getProduct } from '@shopperz-web/src/lib/utils';
+import { CartActions } from '@shopperz/cart-actions';
+import Rating from '@shopperz-web/src/components/rating';
 
 export const generateMetadata = async ({
   params,

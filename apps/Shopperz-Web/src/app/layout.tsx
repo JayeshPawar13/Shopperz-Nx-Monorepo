@@ -1,12 +1,11 @@
-import '@/styles/globals.css';
+import '@shopperz-web/src/styles/globals.css';
 import { Metadata, Viewport } from 'next';
 import clsx from 'clsx';
 
 import { Providers } from './providers';
-
-import { siteConfig } from '@/config/site';
-import { fontSans } from '@/config/fonts';
-import { Navbar } from '@/components/navbar';
+import { fontSans } from '@shopperz-web/src/config/fonts';
+import { siteConfig } from '@shopperz-web/src/config/site';
+import { Navbar } from '@shopperz-web/src/components/navbar';
 
 export const metadata: Metadata = {
   title: {

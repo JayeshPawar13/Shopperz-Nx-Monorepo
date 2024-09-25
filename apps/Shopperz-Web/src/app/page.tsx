@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-
-import { Product } from './products/products.interface';
-
-import { getProducts } from '@/lib/utils';
-import { title } from '@/components/primitives';
+import { getProducts } from '../lib/utils';
+import { Product } from '@shopperz/interfaces/products.interface';
+import { title } from '../components/primitives';
 
 export default async function Home() {
   const products = await getProducts();

@@ -2,7 +2,7 @@ import { Collection, ObjectId } from 'mongodb';
 
 import clientPromise from './mongodb';
 
-import { Product } from '@/app/products/products.interface';
+import { Product } from '@shopperz/interfaces/products.interface';
 import { User } from '@/app/user.interface';
 import { Cart } from '@/app/cart/cart.interface';
 
@@ -10,10 +10,10 @@ type CollectionName = 'cart' | 'products' | 'shopping-app-user';
 type CollectionType<T extends CollectionName> = T extends 'cart'
   ? Cart
   : T extends 'products'
-    ? Product
-    : T extends 'shopping-app-user'
-      ? User
-      : never;
+  ? Product
+  : T extends 'shopping-app-user'
+  ? User
+  : never;
 
 const getCollection = async <T extends CollectionName>(
   collectionName: T

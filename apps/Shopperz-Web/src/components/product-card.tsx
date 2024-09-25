@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect } from 'react';
 
-import CartActions from './cartActions';
 import Rating from './rating';
 
-import { Product } from '@/app/products/products.interface';
-import { useAppContext } from '@/app/providers';
-import { User } from '@/app/user.interface';
+import { Product } from '@shopperz/interfaces/products.interface';
+import { useAppContext } from '@shopperz/context';
+import { User } from '@shopperz/interfaces/user.interface';
+import { CartActions } from '@shopperz/cart-actions';
 
 const ProductList = ({
   productsData,
