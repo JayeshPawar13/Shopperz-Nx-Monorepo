@@ -1,0 +1,9 @@
+{
+  "name": "Shopperz-Login-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/Shopperz-Login-e2e/src",
+  "tags": [],
+  "implicitDependencies": ["Shopperz-Login"],
+  "// targets": "to see all targets run: nx show project Shopperz-Login-e2e --web",
+  "targets": {}
+}

@@ -16,6 +16,7 @@
     "baseUrl": ".",
     "paths": {
       "@shopperz-web/*": ["apps/Shopperz-Web/*"],
+      "@shopperz-login/*": ["apps/Shopperz-Login/*"],
       "@shopperz/cart-actions": ["shared/cart-actions/src/index.ts"],
       "@shopperz/cart-actions/server": ["shared/cart-actions/src/server.ts"],
       "@shopperz/context": ["shared/context/src/index.ts"],
