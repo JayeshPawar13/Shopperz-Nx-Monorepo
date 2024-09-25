@@ -9,7 +9,7 @@ module.exports = {
       __dirname,
       '{src,pages,components,app}/**/*!(*.stories|*.spec).{ts,tsx,html}'
     ),
-    'src/node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    '../../node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
 
     // This includes dependencies from the Nx workspace
     ...createGlobPatternsForDependencies(__dirname),
