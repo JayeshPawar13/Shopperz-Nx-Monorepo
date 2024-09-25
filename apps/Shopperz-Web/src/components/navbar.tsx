@@ -63,10 +63,7 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
+      <NavbarContent className="hidden sm:flex sm:basis-full" justify="end">
         <NavbarItem className="relative flex gap-2 transform transition-transform duration-300 hover:scale-110">
           <NextLink
             className="flex justify-start items-center gap-1"
@@ -92,6 +89,19 @@ export const Navbar = () => {
                 {totalQuantity}
               </span>
             )}
+          </NextLink>
+        </NavbarItem>
+        <NavbarItem key="logout-nav-item">
+          <NextLink
+            className={clsx(
+              linkStyles({ color: 'foreground' }),
+              'data-[active=true]:text-primary data-[active=true]:font-medium'
+            )}
+            color="foreground"
+            href={'http://localhost:3000'}
+            onClick={() => router.refresh()}
+          >
+            Logout
           </NextLink>
         </NavbarItem>
       </NavbarContent>
