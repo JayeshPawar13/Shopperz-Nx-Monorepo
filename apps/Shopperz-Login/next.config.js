@@ -18,8 +18,7 @@ const nextConfig = {
     mongodb_clustername: 'cluster0',
     mongodb_database: 'shopping-app',
     mongodb_user_database: 'user',
-    API_URL: 'http://localhost:3001',
-    NEXT_PUBLIC_PAGE_URL: 'http://localhost:3001',
+    NEXT_PUBLIC_PAGE_URL: 'test',
   },
 };
 
