@@ -1,0 +1,9 @@
+{
+  "name": "cart-actions",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "shared/cart-actions/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project cart-actions --web",
+  "targets": {}
+}
