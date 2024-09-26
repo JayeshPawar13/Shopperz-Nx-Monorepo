@@ -3,8 +3,8 @@ import { Collection, ObjectId } from 'mongodb';
 import clientPromise from './mongodb';
 
 import { Product } from '@shopperz/interfaces/products.interface';
-import { User } from '@/app/user.interface';
-import { Cart } from '@/app/cart/cart.interface';
+import { Cart } from '@shopperz/interfaces/cart.interface';
+import { User } from '@shopperz/interfaces/user.interface';
 
 type CollectionName = 'cart' | 'products' | 'shopping-app-user';
 type CollectionType<T extends CollectionName> = T extends 'cart'
