@@ -15,7 +15,7 @@ export default function LoginPage() {
     e.preventDefault();
 
     if (username === 'admin' && password === 'admin') {
-      router.push(process.env.PAGE_URL ?? '/');
+      router.push(process.env.NEXT_PUBLIC_PAGE_URL ?? '/');
     } else {
       setError('Invalid credentials');
     }
