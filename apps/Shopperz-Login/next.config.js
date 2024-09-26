@@ -18,7 +18,7 @@ const nextConfig = {
     mongodb_clustername: 'cluster0',
     mongodb_database: 'shopping-app',
     mongodb_user_database: 'user',
-    NEXT_PUBLIC_PAGE_URL: 'test',
+    NEXT_PUBLIC_PAGE_URL: process.env.NEXT_PUBLIC_PAGE_URL,
   },
 };
 
