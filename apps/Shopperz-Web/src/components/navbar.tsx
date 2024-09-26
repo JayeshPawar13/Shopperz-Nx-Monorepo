@@ -98,7 +98,7 @@ export const Navbar = () => {
               'data-[active=true]:text-primary data-[active=true]:font-medium'
             )}
             color="foreground"
-            href={'http://localhost:3000'}
+            href={process.env.LOGIN_PAGE_URL ?? ''}
             onClick={() => router.refresh()}
           >
             Logout
