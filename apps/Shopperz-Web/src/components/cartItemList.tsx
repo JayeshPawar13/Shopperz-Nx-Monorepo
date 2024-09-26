@@ -16,12 +16,8 @@ export default function CartListItems() {
   const { user } = useAppContext();
   const [total, setTotal] = useState(0);
 
-  console.log('outside');
-
   const productMap = useMemo(() => {
     const map = new Map<string, Product>();
-
-    console.log('memo');
 
     products.forEach((product) => map.set(product._id.toString(), product));
 
