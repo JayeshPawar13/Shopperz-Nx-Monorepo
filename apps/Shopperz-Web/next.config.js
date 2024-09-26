@@ -19,7 +19,7 @@ const nextConfig = {
     mongodb_database: 'shopping-app',
     mongodb_user_database: 'user',
     API_URL: 'http://localhost:3000',
-    LOGIN_PAGE_URL: 'http://localhost:3000',
+    NEXT_PUBLIC_LOGIN_PAGE_URL: 'http://localhost:3000',
   },
 };
 

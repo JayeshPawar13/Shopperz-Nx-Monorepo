@@ -98,7 +98,7 @@ export const Navbar = () => {
               'data-[active=true]:text-primary data-[active=true]:font-medium'
             )}
             color="foreground"
-            href={process.env.LOGIN_PAGE_URL ?? ''}
+            href={process.env.NEXT_PUBLIC_LOGIN_PAGE_URL ?? '/'}
             onClick={() => router.refresh()}
           >
             Logout
