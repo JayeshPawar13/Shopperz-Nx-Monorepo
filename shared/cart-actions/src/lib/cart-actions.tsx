@@ -7,6 +7,7 @@ import { MdDeleteOutline } from 'react-icons/md';
 import { Cart } from '@shopperz/interfaces/cart.interface';
 import { Product } from '@shopperz/interfaces/products.interface';
 import { useAppContext } from '@shopperz/context';
+import { toast } from 'sonner';
 
 interface CartActionsProps {
   product: Product;
@@ -42,6 +43,7 @@ export function CartActions({
     if (cartResp) {
       if (onAddToCart) onAddToCart();
       setCart(obj);
+      toast.success('Product added to cart!');
       if (handleSetCart) handleSetCart(obj);
     }
   };
@@ -61,6 +63,7 @@ export function CartActions({
       if (onDelete) onDelete();
       if (onRemoveFromCart) onRemoveFromCart();
       if (handleSetCart) handleSetCart(obj);
+      toast.success('Product deleted from cart!');
     }
   };
 
