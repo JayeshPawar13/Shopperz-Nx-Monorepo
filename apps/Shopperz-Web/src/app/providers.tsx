@@ -6,6 +6,7 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { ThemeProviderProps } from 'next-themes/dist/types';
 import { ReactNode } from 'react';
 import { AppContextProvider } from '@shopperz/context';
+import { Toaster } from 'sonner';
 export interface ProvidersProps {
   children: ReactNode;
   themeProps?: ThemeProviderProps;
@@ -18,6 +19,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
     <AppContextProvider>
       <NextUIProvider navigate={router.push}>
         <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+        <Toaster richColors />
       </NextUIProvider>
     </AppContextProvider>
   );

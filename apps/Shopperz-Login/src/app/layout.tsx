@@ -1,9 +1,20 @@
 import '../styles/globals.css';
-import { Viewport } from 'next';
+import { Metadata, Viewport } from 'next';
 import clsx from 'clsx';
 
 import { Providers } from './providers';
 import { fontSans } from '../config/fonts';
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Login',
+    template: '',
+  },
+  description: 'Login to Shopperz',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
 
 export const viewport: Viewport = {
   themeColor: [
