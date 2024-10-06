@@ -19,7 +19,7 @@ import { siteConfig } from '../config/site';
 export const Navbar = () => {
   const router = useRouter();
   const { cart } = useAppContext();
-  const totalQuantity = cart.items.reduce(
+  const totalQuantity = cart?.items.reduce(
     (acc, item) => acc + item.quantity,
     0
   );

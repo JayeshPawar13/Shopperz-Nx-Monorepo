@@ -26,8 +26,9 @@ const ProductList = ({
     const fetchCart = async () => {
       const response = await fetch(`/api/cart?id=66e5e9e5f1bb7da2963ec428`);
       const cartResp = await response.json();
+      console.log(cartResp);
 
-      setCart(cartResp[0]);
+      setCart(cartResp);
     };
 
     fetchCart();

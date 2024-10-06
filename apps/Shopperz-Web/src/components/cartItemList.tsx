@@ -43,8 +43,9 @@ export default function CartListItems() {
         cache: 'no-store',
       });
       const cartResp = await response.json();
+      console.log(cartResp);
 
-      setCart(cartResp[0]);
+      setCart(cartResp);
     };
 
     fetchCart();
