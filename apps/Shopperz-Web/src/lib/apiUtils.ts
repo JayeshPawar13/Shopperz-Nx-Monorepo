@@ -1,20 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Collection, ObjectId } from 'mongodb';
+import { Collection } from 'mongodb';
 
 import clientPromise from './mongodb';
 
 import { Product } from '@shopperz/interfaces/products.interface';
 import { Cart } from '@shopperz/interfaces/cart.interface';
 import { User } from '@shopperz/interfaces/user.interface';
-
-type CollectionName = 'cart' | 'products' | 'shopping-app-user';
-type CollectionType<T extends CollectionName> = T extends 'cart'
-  ? Cart
-  : T extends 'products'
-  ? Product
-  : T extends 'shopping-app-user'
-  ? User
-  : never;
+import {
+  CollectionType,
+  CollectionName,
+} from '@shopperz/interfaces/common.interface';
 
 const getCollection = async <T extends CollectionName>(
   collectionName: T

@@ -1,10 +1,4 @@
-import {
-  deleteApiUtil,
-  getApiUtil,
-  makeApiCall,
-  postApiUtil,
-  putApiUtil,
-} from '@shopperz-web/src/lib/apiUtils';
+import { makeApiCall } from '@shopperz-web/src/lib/apiUtils';
 import { Cart } from '@shopperz/interfaces/cart.interface';
 import { Product } from '@shopperz/interfaces/products.interface';
 import { User } from '@shopperz/interfaces/user.interface';
