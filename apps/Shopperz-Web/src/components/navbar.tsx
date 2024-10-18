@@ -36,7 +36,7 @@ export const Navbar = () => {
   }, [totalQuantity]);
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar data-testid="navbar" maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
@@ -46,7 +46,7 @@ export const Navbar = () => {
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
+            <NavbarItem data-testid={`${item.label}-nav-item`} key={item.href}>
               <NextLink
                 className={clsx(
                   linkStyles({ color: 'foreground' }),
@@ -64,7 +64,10 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex sm:basis-full" justify="end">
-        <NavbarItem className="relative flex gap-2 transform transition-transform duration-300 hover:scale-110">
+        <NavbarItem
+          data-testid="cart-nav-item"
+          className="relative flex gap-2 transform transition-transform duration-300 hover:scale-110"
+        >
           <NextLink
             className="flex justify-start items-center gap-1"
             href="/cart"
@@ -91,7 +94,7 @@ export const Navbar = () => {
             )}
           </NextLink>
         </NavbarItem>
-        <NavbarItem key="logout-nav-item">
+        <NavbarItem data-testid="logout-nav-item" key="logout-nav-item">
           <NextLink
             className={clsx(
               linkStyles({ color: 'foreground' }),

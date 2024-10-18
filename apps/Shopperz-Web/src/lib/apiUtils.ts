@@ -10,6 +10,7 @@ import {
   CollectionType,
   CollectionName,
 } from '@shopperz/interfaces/common.interface';
+import { toast } from 'sonner';
 
 const getCollection = async <T extends CollectionName>(
   collectionName: T
@@ -44,6 +45,9 @@ export async function makeApiCall(
 
     return NextResponse.json(result, { status: 200 });
   } catch (error) {
+    toast.error(
+      `Failed to process ${request.method} request for ${collectionName}`
+    );
     return NextResponse.json(
       {
         error: `Failed to process ${request.method} request for ${collectionName}`,
