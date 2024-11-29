@@ -10,7 +10,14 @@
     "lint": "nx lint",
     "e2e": "nx e2e",
     "clean": "nx clean",
-    "reset": "nx reset"
+    "reset": "nx reset",
+    "login-dev": "nx run Shopperz-Login:dev",
+    "login-start": "nx run Shopperz-Login:start",
+    "login-build": "nx build Shopperz-Login",
+    "web-dev": "nx run Shopperz-Web:dev",
+    "web-start": "nx run Shopperz-Web:start",
+    "web-build": "nx build Shopperz-Web",
+    "login-web-start": "npx nx run-many --target=start --projects=Shopperz-Login,Shopperz-Web"
   },
   "private": true,
   "dependencies": {
